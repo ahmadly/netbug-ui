@@ -1,6 +1,6 @@
 {
-  "name": "core",
-  "short_name": "core",
+  "name": "Core",
+  "short_name": "Core",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
