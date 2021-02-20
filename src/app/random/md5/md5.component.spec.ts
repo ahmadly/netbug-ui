@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PasswordComponent } from './password.component';
+import { MD5Component } from './md5.component';
 
-describe('PasswordComponent', () => {
-  let component: PasswordComponent;
-  let fixture: ComponentFixture<PasswordComponent>;
+describe('MD5Component', () => {
+  let component: MD5Component;
+  let fixture: ComponentFixture<MD5Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PasswordComponent ]
+      declarations: [ MD5Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PasswordComponent);
+    fixture = TestBed.createComponent(MD5Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
