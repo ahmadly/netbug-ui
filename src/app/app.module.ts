@@ -1,27 +1,24 @@
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ServiceWorkerModule} from '@angular/service-worker';
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {environment} from '../environments/environment';
+import {BrowserModule} from '@angular/platform-browser';
+
 import {AppRoutingModule} from './app-routing.module';
-import {SharedModule} from './shared/shared.module';
 import {AppComponent} from './app.component';
-import {FormsModule} from '@angular/forms';
-import {RandomModule} from './random/random.module';
+import {SharedModule} from './shared/shared.module';
+import {SidebarComponent} from './sidebar/sidebar.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent
   ],
-    imports: [
-        BrowserModule,
-        SharedModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
-        FormsModule,
-        RandomModule
-    ],
+  imports: [
+    BrowserModule,
+    SharedModule,
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
